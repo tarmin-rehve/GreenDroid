@@ -18,6 +18,12 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.cyrilmottier.android.greendroid"
+      package="com.cyrilmottier.google.greendroid"
       android:versionCode="1"
-      android:versionName="1.0" /> 
+      android:versionName="1.0">
+
+    <application>
+        <uses-library
+            android:name="com.google.android.maps" />
+    </application>
+</manifest>

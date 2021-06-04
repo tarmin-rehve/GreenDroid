@@ -14,7 +14,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.drawable.Drawable;
 
-import com.cyrilmottier.android.greendroid.R;
+import com.cyrilmottier.google.greendroid.R;
 import com.google.android.maps.MapView;
 
 /**
