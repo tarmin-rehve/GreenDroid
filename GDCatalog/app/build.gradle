@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:8'
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.cyrilmottier.android.gdcatalog"
+        minSdkVersion 4 //Android 1.6 Donut
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 4
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: android.sdkDirectory.path + '/add-ons/addon-google_apis-google-8/libs/', include: ['*.aar', '*.jar'], exclude: [])
+    implementation project(path: ':android.greendroid lib')
+    implementation project(path: ':google.greendroid lib')
+}

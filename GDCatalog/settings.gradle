@@ -1,0 +1,8 @@
+include ':app'
+include ':android.greendroid lib'
+include ':google.greendroid lib'
+
+project(':android.greendroid lib').projectDir = new File(rootDir, '../GreenDroid/app')
+project(':google.greendroid lib').projectDir = new File(rootDir, '../GreenDroid-GoogleAPIs/app')
+
+rootProject.name='GreenDroid Catalog App'

@@ -1,10 +1,10 @@
-## Exclude file used by compilators, interpreters, etc.
-*/bin/*
-*/gen/*
-*.pyc
+.gradle
+.idea
+build
+local.properties
 
 ## Exclude Mac OS X files
-*.DS_Store
+.DS_Store
 
 ## The following files contain private values
 */res/values/p_*.xml
