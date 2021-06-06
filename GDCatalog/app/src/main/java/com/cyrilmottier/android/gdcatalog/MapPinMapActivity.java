@@ -18,6 +18,7 @@ package com.cyrilmottier.android.gdcatalog;
 import greendroid.app.GDMapActivity;
 import greendroid.graphics.drawable.DrawableStateSet;
 import greendroid.graphics.drawable.MapPinDrawable;
+import greendroid.widget.ActionBar;
 
 import java.util.ArrayList;
 import java.util.Random;

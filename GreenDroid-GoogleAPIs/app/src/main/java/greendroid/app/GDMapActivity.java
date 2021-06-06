@@ -253,4 +253,9 @@ public abstract class GDMapActivity extends MapActivity implements ActionBarActi
         }
     };
 
+    @Override
+    public ActionBar getGDActionBar() {
+        ensureLayout();
+        return mActionBarHost.getActionBar();
+    }
 }
