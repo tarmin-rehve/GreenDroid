@@ -248,12 +248,12 @@ public class GDActivity extends Activity implements ActionBarActivity {
         }
 
         final int visibility = intent.getIntExtra(ActionBarActivity.GD_ACTION_BAR_VISIBILITY, View.VISIBLE);
-        getGDActionBar().setVisibility(visibility);
+        getActionBar().setVisibility(visibility);
     }
 
     @Override
     public void setTitle(CharSequence title) {
-        getGDActionBar().setTitle(title);
+        getActionBar().setTitle(title);
     }
 
     @Override
@@ -261,25 +261,25 @@ public class GDActivity extends Activity implements ActionBarActivity {
         setTitle(getString(titleId));
     }
 
-    public ActionBar getGDActionBar() {
+    public ActionBar getActionBar() {
         ensureLayout();
         return mActionBarHost.getActionBar();
     }
 
     public ActionBarItem addActionBarItem(ActionBarItem item) {
-        return getGDActionBar().addItem(item);
+        return getActionBar().addItem(item);
     }
 
     public ActionBarItem addActionBarItem(ActionBarItem item, int itemId) {
-        return getGDActionBar().addItem(item, itemId);
+        return getActionBar().addItem(item, itemId);
     }
 
     public ActionBarItem addActionBarItem(ActionBarItem.Type actionBarItemType) {
-        return getGDActionBar().addItem(actionBarItemType);
+        return getActionBar().addItem(actionBarItemType);
     }
 
     public ActionBarItem addActionBarItem(ActionBarItem.Type actionBarItemType, int itemId) {
-        return getGDActionBar().addItem(actionBarItemType, itemId);
+        return getActionBar().addItem(actionBarItemType, itemId);
     }
 
     public FrameLayout getContentView() {
@@ -384,7 +384,7 @@ public class GDActivity extends Activity implements ActionBarActivity {
                 }
 
             } else {
-                if (!onHandleActionBarItemClick(getGDActionBar().getItem(position), position)) {
+                if (!onHandleActionBarItemClick(getActionBar().getItem(position), position)) {
                     if (Config.GD_WARNING_LOGS_ENABLED) {
                         Log.w(LOG_TAG, "Click on item at position " + position + " dropped down to the floor");
                     }
